@@ -163,7 +163,7 @@ void main_show() {
 	gotoxy(x, ++y);
 	print_main_text("   VV     #########     VV", lightred, &x, &y);
 	gotoxy(x, ++y);
-	print_main_text("    #   ####     ####   #   ", lightred, &x, &y);
+	print_main_text("    #   ###       ###   #   ", lightred, &x, &y);
 	gotoxy(x, ++y);
 	print_main_text("      # ###  VVV  ### #     ", lightred, &x, &y);
 	gotoxy(x, ++y);
@@ -276,11 +276,6 @@ void line(int x, int y)
 	printf("■■■■■■■■■■■■■■■■■■■■■■■");
 	gotoxy(77, 14);
 	printf("■■■■■■■■■■■■■■■■■■■■■");
-
-	gotoxy(40, 24);
-	printf("● ＼__ /_          /●/__-_       ＼●_   _/  (");
-	gotoxy(28, 25);
-	printf("▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲");
 
 	// x,y함수로 line그려줌 x =40, y = 11
 	gotoxy(x, 11);
