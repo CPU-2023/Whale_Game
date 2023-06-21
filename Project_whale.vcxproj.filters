@@ -41,4 +41,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="C:\Users\User\Downloads\Summer,Sunset,Sea\sea.wav">
+      <Filter>소스 파일</Filter>
+    </Media>
+  </ItemGroup>
 </Project>

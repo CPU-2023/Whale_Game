@@ -148,6 +148,9 @@
     <ClCompile Include="modules.c" />
     <ClCompile Include="Whale.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="C:\Users\User\Downloads\Summer,Sunset,Sea\sea.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -39,22 +39,18 @@ void move_arrow_key(
 	const int X_MAX = x_max;
 
 	switch (key) {
-		// pressed ��
 	case UP:
 		*y -= size;
 		if (*y < Y_MIN) *y = Y_MAX;
 		break;
-		// pressed ��
 	case DOWN:
 		*y += size;
 		if (*y > Y_MAX) *y = Y_MIN;
 		break;
-		// pressed ��
 	case LEFT:
 		*x -= size;
 		if (*x < X_MIN) *x = X_MAX;
 		break;
-		// pressed ��
 	case RIGHT:
 		*x += size;
 		if (*x > X_MAX) *x = X_MIN;
@@ -77,7 +73,6 @@ void print_by_name(char* name) {
 	setColor(darkgray);
 
 	if (strlen(name) > 8) {
-		// 3�� �̻��̸�
 		gotoxy(88, 28);
 	}
 	else {
@@ -93,7 +88,7 @@ void print_by_text(char* text, char* color, int x, int y) {
 	setColor(color);
 
 	gotoxy(x, y);
-	printf("TEAM [ %s ] KILL", text);
+	printf("TEAM [ %s ] WIN", text);
 
 	setColor(white);
 }
@@ -103,12 +98,10 @@ void print_main_text(char* text, char* color, int x, int y) {
 	printf("%s", text);
 
 	setColor(white);
-
 }
 
 
 void rectangle(int width, int height, int x, int y) {
-	// ������������
 	for (int i = 1; i < width / 2; i++) {
 		gotoxy((x + width) / 2 - i, y);
 		printf("─");
@@ -122,10 +115,8 @@ void rectangle(int width, int height, int x, int y) {
 	gotoxy(x + width, y);
 	printf("┐");
 
-	// ��      ��
 	for (int i = 1; i < height; i++) {
 		gotoxy(x, y + i);
-		// ��      ��
 		printf("│");
 
 		for (int j = 1; j < width - 1; j++) {
@@ -137,7 +128,6 @@ void rectangle(int width, int height, int x, int y) {
 		Sleep(1);
 	}
 
-	// ������������
 	gotoxy(x, y + height);
 	printf("└");
 	gotoxy(x + width, y + height);
